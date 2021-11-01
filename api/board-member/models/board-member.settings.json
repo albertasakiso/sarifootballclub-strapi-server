@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "board_members",
+  "info": {
+    "name": "BoardMember",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Fullname": {
+      "type": "string",
+      "required": true
+    },
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Position": {
+      "type": "string"
+    }
+  }
+}

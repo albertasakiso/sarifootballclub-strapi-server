@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "divisions",
+  "info": {
+    "name": "division"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "director": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

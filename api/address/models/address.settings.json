@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "name": "Address",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "PostalCode": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "integer"
+    },
+    "mail": {
+      "type": "email"
+    },
+    "region": {
+      "type": "string"
+    },
+    "digitalAddress": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "director": {
+      "type": "string"
+    }
+  }
+}

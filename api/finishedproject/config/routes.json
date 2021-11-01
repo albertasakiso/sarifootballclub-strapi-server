@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/finishedprojects",
+      "handler": "finishedproject.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/finishedprojects/count",
+      "handler": "finishedproject.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/finishedprojects/:id",
+      "handler": "finishedproject.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/finishedprojects",
+      "handler": "finishedproject.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/finishedprojects/:id",
+      "handler": "finishedproject.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/finishedprojects/:id",
+      "handler": "finishedproject.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

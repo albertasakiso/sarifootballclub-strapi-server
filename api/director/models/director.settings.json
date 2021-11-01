@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "directors",
+  "info": {
+    "name": "director"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Fullname": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Position": {
+      "type": "string"
+    }
+  }
+}

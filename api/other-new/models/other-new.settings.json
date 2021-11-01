@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "other_news",
+  "info": {
+    "name": "otherNew"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

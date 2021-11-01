@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "careers",
+  "info": {
+    "name": "careers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "career": {
+      "type": "string"
+    },
+    "MIS": {
+      "type": "enumeration",
+      "enum": [
+        "Developer",
+        "Technician"
+      ]
+    }
+  }
+}
